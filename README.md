@@ -73,20 +73,20 @@ Hover effects on episode cards.
 
 Consistent navigation bar across all pages.
 
-Project Structure
-📁 podcast/
-│
-├── index.html          # Login page
-├── signup.html         # Signup page
-├── home.html           # Home page
-├── episodes.html       # Episodes listing
-├── upload.html         # Upload episode page
-├── contact.html        # Contact + About
-│
-├── style.css           # Main styling file
-├── validate.js         # All validation + login logic
-│
-├── PodConnect Logo Icon Dark BG.png  
-│
-├── (All .jpg thumbnails)
-├── (All .mp3 audio files)
+Project Structure<br>
+📁 podcast/<br>
+│<br>
+├── index.html          # Login page<br>
+├── signup.html         # Signup page<br>
+├── home.html           # Home page<br>
+├── episodes.html       # Episodes listing<br>
+├── upload.html         # Upload episode page<br>
+├── contact.html        # Contact + About<br>
+│<br>
+├── style.css           # Main styling file<br>
+├── validate.js         # All validation + login logic<br>
+│<br>
+├── PodConnect Logo Icon Dark BG.png<br>
+│<br>
+├── (All .jpg thumbnails)<br>
+├── (All .mp3 audio files)<br>
