@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Podcast</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .upload-box{
+            width: 60%;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        .upload-box h2{
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .upload-box label{font-weight: bold;}
+        .upload-box input, .upload-box textarea, .upload-box button{
+            width: 100%;
+            margin-top: 8px;
+            padding: 8px;
+        }
+        .upload-box textarea{height: 80px;}
+        .upload-box button{
+            background:rgba(255, 0, 0, 0.712);
+            color: #222;
+            border: none;
+        }
+    </style>
+
+    <script>
+        function showMessage(){
+            alert("Your Episode is Submitted for Review");
+        }
+    </script>
+
+</head>
+<body>
+
+
+
+<div class="navbar">
+    <img class="logo-img" src="PodConnect Logo Icon Dark BG.png">
+    <h1 class="logo">PodConnect</h1>
+    <a href="home.html">Home</a>
+    <a href="episodes.html">Episodes</a>
+    <a href="upload.html">Upload</a>
+    <a href="contact.html">Contact & About</a>
+
+</div>
+
+<header><h1>Upload Episode</h1></header>
+
+<div class="upload-box">
+
+    <h2>New Podcast Episode</h2>
+
+    <form onsubmit="showMessage();">
+
+        <label>Episode Title</label>
+        <input type="text" placeholder="Enter episode title">
+
+        <label>Description</label>
+        <textarea placeholder="Episode details"></textarea>
+
+        <label>Audio File</label>
+        <input type="file" accept="audio/*">
+
+        <label>Thumbnail Image</label>
+        <input type="file" accept="image/*">
+
+        <button type="submit">Upload</button>
+
+    </form>
+</div>
+</body>
+</html>

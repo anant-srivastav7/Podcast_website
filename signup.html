@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="validate.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Poppins, Arial;
+            background: #f7f7f7;
+        }
+
+        .navbar {
+            background: #000;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar img {
+            width: 55px;
+            height: 55px;
+            margin-right: 10px;
+        }
+
+        .navbar h1 {
+            color: white;
+            margin-right: auto;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            margin-left: 15px;
+        }
+
+        .signup-box{
+            width: 60%;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .signup-box h2{
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .signup-box label{
+            font-weight: bold;
+        }
+
+        .signup-box input, 
+        .signup-box button{
+            width: 100%;
+            margin-top: 8px;
+            padding: 8px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+
+        .signup-box button{
+            background: rgba(255, 0, 0, 0.712);
+            color: #222;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .signup-box p{
+            text-align: center;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+
+<header><h1>Signup</h1></header>
+
+<div class="signup-box">
+
+    <h2>Create Account</h2>
+
+    <form onsubmit="return validateSignup()">
+
+        <label>Full Name</label>
+        <input id="userName" type="text" placeholder="Enter full name">
+
+        <label>Email</label>
+        <input id="userEmail" type="email" placeholder="Enter email address">
+
+        <label>Password</label>
+        <input id="userPassword" type="password" placeholder="Enter password">
+
+        <label>Confirm Password</label>
+        <input id="confirmPassword" type="password" placeholder="Re-enter password">
+
+        <button type="submit">Signup</button>
+
+        <p id="signupMessage"></p>
+
+    </form>
+
+</div>
+</body>
+</html>

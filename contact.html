@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact & About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-box{
+            width: 60%;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        .contact-box h2{
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .contact-box input, .contact-box textarea, .contact-box button{
+            width: 100%;
+            padding: 8px;
+            margin-top: 7px;
+        }
+        .contact-box textarea{height: 90px;}
+        .contact-box button{
+            background: rgba(255, 0, 0, 0.712);;
+            color: #222;
+            border: none;
+        }
+        .info-box{
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+        <script src="validate.js"></script>
+</head>
+<body>
+
+
+
+<div class="navbar">
+    <img class="logo-img" src="PodConnect Logo Icon Dark BG.png">
+    <h1 class="logo">PodConnect</h1>
+    <a href="home.html">Home</a>
+    <a href="episodes.html">Episodes</a>
+    <a href="upload.html">Upload</a>
+    <a href="contact.html">Contact & About</a>
+
+</div>
+
+<div class="about-section">
+    <h1>Our Mission</h1>
+    <p>
+       PodConnect aims to share knowledge with storytelling, 
+       technology talks and real conversations that help people grow.
+    </p>
+
+<header><h1>Contact Us</h1></header>
+
+<div class="contact-box">
+    <h2>Get in Touch</h2>
+
+    <form onsubmit="return validateForm();">
+        <input id="nameInput" type="text" placeholder="Your Name">
+        <input id="emailInput" type="email" placeholder="Your Email">
+        <textarea id="messageInput" placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+
+    <div class="info-box">
+        <p>Email: Anant@PodConnect.com</p>
+        <p>Phone: +91 6239684318</p>
+        <p>Location: Uttar Pradesh, India</p>
+    </div>
+</div>
+</body>
+</html>
