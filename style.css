@@ -1,0 +1,81 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #fafafa;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background: #222;
+    padding: 12px;
+}
+
+.navbar a {
+    color: white;
+    margin-right: 15px;
+    text-decoration:none;
+}
+
+.navbar a:hover{
+    color: red;
+}
+
+.logo {
+    margin-right: auto;
+    color:  rgba(255, 0, 0, 0.712);
+}
+
+.logo-img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.banner {
+    text-align: center;
+    padding: 45px;
+    background: rgba(255, 0, 0, 0.712);
+    color: white;
+}
+
+.episodes-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.episode-card{
+    width: 260px;
+    background:white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.episode-card img{
+    border: 3px solid red;
+    border-radius: 12px;
+    padding: 10px;
+    width: 100%;
+    height: 150px;
+}
+
+.episode-card:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease;
+}
+
+.form-container{
+    width:350px;
+    background:white;
+    padding:25px;
+    margin:50px auto;
+    border-radius:10px;
+}
+
+.form-container input{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+}
