@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="validate.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Poppins, Arial;
+            background: #f7f7f7;
+        }
+
+        .navbar {
+            background: #000;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar img {
+            width: 55px;
+            height: 55px;
+            margin-right: 10px;
+        }
+
+        .navbar h2 {
+            color: white;
+            margin-right: auto;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            margin-left: 15px;
+        }
+
+        .login-box {
+            width: 60%;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .login-box h2{
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .login-box input, 
+        .login-box button {
+            width: 100%;
+            margin-top: 8px;
+            padding: 8px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+
+        .login-box button {
+            background: rgba(255, 0, 0, 0.712);
+            color: #222;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-box p {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .login-box a {
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header><h1>Login</h1></header>
+
+<div class="login-box">
+    
+    <h2>Login</h2>
+
+    <form onsubmit="return validateLogin()">
+
+        <label>Email</label>
+        <input id="loginEmail" type="email" placeholder="Enter your email">
+
+        <label>Password</label>
+        <input id="loginPassword" type="password" placeholder="Enter your password">
+
+        <button type="submit">Login</button>
+
+        <p id="loginMessage"></p>
+
+    </form>
+
+    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+
+</div>
+
+</body>
+</html>
